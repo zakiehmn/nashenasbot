@@ -24,7 +24,7 @@ def send_unknown_messsage(message):
         unknown_messagesText.append(message.text)
         for messageText in unknown_messagesText:
             print(messageText)
-        bot.send_message(message.chat.id, "پیام شما به صورت ناشناس فرستاده میشود")
+        bot.send_message(message.chat.id, "پیام شما به صورت ناشناس فرستاده خواهد شد")
 
 
 @bot.message_handler(func = lambda message : message.text == recieveBtnText)
